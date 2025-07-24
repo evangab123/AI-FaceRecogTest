@@ -87,8 +87,9 @@ Avoid:
 
 Following these suggestions will help the model generate better embeddings and improve recognition accuracy.
 
+---
 
-Model Link:
-https://huggingface.co/maze/faceX/resolve/main/w600k_r50.onnx
+Model: w600k_r50.onnx
+Source: [Hugging Face - maze/faceX](https://huggingface.co/maze/faceX/resolve/main/w600k_r50.onnx)
 
-
+Make sure the model is placed in the correct path (app/models/w600k_r50.onnx) before running the app. If the file is too large, you may need to download it manually and exclude it from version control (.gitignore).
