@@ -40,37 +40,31 @@ A simple facial recognition system using FastAPI and FaceNet. Easily deployable 
 ## How to Run (Demo/Testing)
 
 1. Open VS Code or WSL Ubuntu Terminal with Docker installed.
-2. Pull the Docker image:
+2. Run the Docker container:
 
    ```bash
-   docker pull evgb123/face-recog-test-app:latest
+   docker-compose up
    ```
-3. Run the Docker container:
-
-   ```bash
-   docker run -p 8000:8000 evgb123/face-recog-test-app
-   ```
-4. Open your browser and go to [http://localhost:8000/docs](http://localhost:8000/docs) to access the FastAPI Swagger UI.
-5. To register a face:
+3. Open your browser and go to [http://localhost:8000/docs](http://localhost:8000/docs) to access the FastAPI Swagger UI.
+4. To register a face:
 
    * Click on the `/api/face/register` section.
    * Click the "Try it out" button.
    * Upload your image and click "Execute".
-6. To recognize a face:
+5. To recognize a face:
 
    * Click on the `/api/face/recognize` section.
    * Click the "Try it out" button.
    * Upload your image and click "Execute".
-7. To get a list of all registered faces:
+6. To get a list of all registered faces:
 
    * Click on the `/api/face` section and click "Try it out" > "Execute".
-8. To delete a face:
+7. To delete a face:
 
    * Click on the `/api/face/{id}` section.
    * Click the "Try it out" button.
    * Input the face ID from step 7 and click "Execute".
 
----
 
 ---
 
@@ -92,4 +86,9 @@ Avoid:
 - ❌ Group photos with multiple faces
 
 Following these suggestions will help the model generate better embeddings and improve recognition accuracy.
+
+
+Model Link:
+https://huggingface.co/maze/faceX/resolve/main/w600k_r50.onnx
+
 
